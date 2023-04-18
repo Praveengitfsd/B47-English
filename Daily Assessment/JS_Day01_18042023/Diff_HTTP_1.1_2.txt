@@ -15,3 +15,5 @@ HTTP2:
 2. It allows multiplexing so one TCP connection is required for multiple requests.
 3. It uses PUSH frame by server that connects all multiple pages.
 4. It uses HPACK for data compression.
+
+- Praveen Kumar Narayanan
