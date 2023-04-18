@@ -1,0 +1,17 @@
+HTTP stands for hypertext transfer protocol & it is used in client-server communication. 
+By using HTTP user sends the request to the server & the server sends the response to the user. 
+There are several stages of development of HTTP but we will focus mainly on HTTP/1.1 which was created in 1997 & the new one is HTTP/2 which was created in 2015.
+
+Difference between HTTP1.1 & HTTP2
+
+HTTP1.1:
+1. It works on textual format
+2. There is head of line blocking that blocks all the requests behind it until it doesn't get its all resources.
+3. it uses resources inlining for use getting multiple pages.
+It compress data by itself.
+
+HTTP2:
+1. It works on binary protocol.
+2. It allows multiplexing so one TCP connection is required for multiple requests.
+3. It uses PUSH frame by server that connects all multiple pages.
+4. It uses HPACK for data compression.
