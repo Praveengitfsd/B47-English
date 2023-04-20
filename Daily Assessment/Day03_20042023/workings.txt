@@ -1,0 +1,31 @@
+var studentDetails={
+    sname: "Praveen",
+    slname: "Narayanan",
+    sage: 30,
+    semail: "withmepraveen@gmail.com"
+}
+
+var stringifyDetails=JSON.stringify(studentDetails)
+
+var parseDetails=JSON.parse(stringifyDetails)
+
+//Get the values through a dot operator
+
+parseDetails.sname
+parseDetails.slname
+parseDetails.sage
+parseDetails.semail
+
+//Print the below pattern using for loop
+****
+****
+****
+****
+****
+
+//Code:
+
+for (var i=0; i<=4; i++)
+    {
+        console.log('****')
+    }
