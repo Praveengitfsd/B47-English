@@ -29,3 +29,35 @@ for (var i=0; i<=4; i++)
     {
         console.log('****')
     }
+
+
+var string=""
+for (var i=1;i<=5;i++){
+    for (var j=1;j<=5;j++){
+        string=string+"*"
+
+    }
+    string=string+"\n"
+ }
+ console.log(string)
+
+ //Home work
+
+// Pattern
+*
+**
+***
+****
+*****
+
+// Code:
+
+ var string=""
+for (var i=1;i<=5;i++){
+    for (var j=1;j<=i;j++){
+        string=string+"*"
+
+    }
+    string=string+"\n"
+ }
+ console.log(string)
