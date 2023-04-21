@@ -1,0 +1,34 @@
+var resumeTitle={
+    "title": "Praveen Profile"
+}
+var resumeDP={
+    "pfofilePic": "Profile Picture"
+}
+var role={
+    "designation": "Designation",
+    "eMail-ID": "withmepraveen@gmail.com",
+    "Mobile": "getMobilenumber",
+    "linkedin": "linkedinid",
+    }
+
+var profile={
+    "profDesc": "A qualified IT developer of more than 10+ years of experience"
+}
+var empHist={
+    "empCurr": "Developer Trainee",
+    "prev1Hist": "Senior Database Admin",
+    "prev2Hist": "Database Admin",
+    "prev3Hist": "Associate Consultant"
+}
+var skills={
+    "skill1": "Oracle Database Administration",
+    "skill2": "Oracle ERP",
+    "skill3": "Linux",
+    "skill4": "AWS",
+    "Skill5": "Database Optimization"
+}
+var candEdu={
+    "postGrad": "Msc",
+    "underGrad": "BSc",
+    "HSC": "State Board"
+}
