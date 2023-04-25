@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Movie{
+            constructor(Title,Studio,rating){ 
+                console.log(1),
+                this.Title=Title,
+                this.Studio=Studio,
+                this.rating=rating
+                if (rating==undefined){
+                    this.rating="PG"
+                }else{
+                    this.rating=rating
+                }
+            }
+        }
+        var M1= new Movie ("Casino Royale", "Eon Productions", "PG-13")
+        console.log(M1)
+        
+        var M2 =new Movie("aaa","bbb")
+        console.log(M2)
+    </script>
+</body>
+</html>

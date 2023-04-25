@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car{
+            constructor(name,year){ //constructor will be called once the object is created for the class
+                console.log(1),
+                this.name=name,
+                this.year=year,
+                this.color="Blue"
+                this.type="Diesel",
+                this.modelno="knaffhegruiekjan"
+            }
+        
+
+        //method
+        getColor(a)
+        {
+            console.log(this.color)
+                }
+            }        
+        var s1= new car ("volvo",2023) //object and arguments
+        console.log(s1)
+
+        var s2= new car("BMW", 2022) //can create n number of object to use the same class with different attribuites
+        console.log(s2)
+
+        s2.name="suzuki"
+        console.log(s2)
+
+        let [name,year,color]=s2
+        console.log(name,year,color)
+        console.log([...s2])
+
+        s2.getColor(10)
+
+    </script>
+</body>
+</html>
