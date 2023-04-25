@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spreading elements in array
+        var arr=[1,2,3,4,5]
+        console.log(...arr)
+
+        //spreading string
+        var arr='hello'
+        console.log(...arr)
+
+        //combine an array
+        var arr1=[1,2,3,4]
+        var arr2=[5,6,7,8]
+        var arr3=[...arr1,...arr2]
+        console.log(arr3)
+
+        //concat
+        console.log(arr1.concat(arr2))
+
+        //inside a function
+        function sample(x,y,z){
+            
+        }
+
+    </script>
+</body>
+</html>

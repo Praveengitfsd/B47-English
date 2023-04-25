@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //add the sum of numbers in array
+        //iiff function
+        (
+            function(arr){
+                //console.log(arr)
+                var sum=0;
+                for(var i=0;i<arr.length;i++){
+                    sum=sum+arr[i]                   
+                }
+                console.log(sum)
+            }
+        )([1,2,3]);
+
+        //Normal function
+
+        function evenNormal (arr){
+            var sum=0;
+            for (var i=0;i<arr.length;i++){
+                if (arr[i]%2==0){
+                    sum=sum+arr[i]  
+                }
+                }
+            console.log(sum)
+          }
+          evenNormal([1,2,3,4,5,6])
+        //anonymous Function
+
+        var sumAnonymous = function (arr){
+            var sum=0;
+            for (var i=0;i<arr.length;i++){
+                if (arr[i]%2==0){
+                    sum=sum+arr[i]  
+                }
+                }
+            console.log(sum)
+          }
+          sumAnonymous([1,2,3,4,5,6])
+
+        //Arrow function
+
+        var sumArrow=(arr)=>{
+            var sum=0;
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]%2==0){
+                    sum=sum+arr[i]                   
+                }
+            }
+                console.log(sum)
+        }
+        sumArrow([1,2,3,4,5,6])
+
+
+    </script>
+    
+</body>
+</html>
