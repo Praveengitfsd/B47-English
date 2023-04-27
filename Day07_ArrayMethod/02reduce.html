@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student=[
+        {
+                name:"Praveen",
+                mark: 50
+            },
+            {
+                name:"kumar",
+                mark:60      
+            },
+            {
+                name:"Narayanan",
+                mark:50
+            }
+        ]
+
+        var marksAdd = student.reduce((acc,element)=>acc+element.mark,0)
+        console.log(marksAdd)
+    </script>
+</body>
+</html>
