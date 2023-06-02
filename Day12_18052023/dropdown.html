@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Dropdown</title>
+    <style>
+        .name{
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+        .dropdown{
+            border: 1px solid red;
+            padding: 5px;
+            width: 5000px;
+            background-color: black;
+            color: beige;
+            position: relative;
+            
+        }
+        .dropdownList{
+            display: none;
+            position: absolute;
+            left: 10px;
+            background-color: grey;
+        }
+        .dropdown:hover .dropdownList{
+            display: block;
+        }
+
+        @media screen and (max-width:400px){
+            .dropdown{
+                width: 80px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown"> Subjects <i class="fa-light fa-caret-down"></i>
+        <div class="dropdownList">
+            <div class="name">Html</div>
+            <div class="name">CSS</div>
+            <div class="name">JavaScript</div>
+            <div class="name">React</div>
+            <div class="name">Node</div>
+        </div>
+    </div>
+</body>
+</html>

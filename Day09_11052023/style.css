@@ -1,0 +1,24 @@
+div{
+    color: brown;
+}
+
+.test{
+    color: darkgreen;
+}
+
+.test1{
+    
+    color: rgb(127, 30, 172);
+    border: solid 5px;
+    background-color: antiquewhite;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+.test2{
+    color: rgb(224, 146, 28);
+    border: solid 5px;
+    background-color: rgb(185, 248, 250);
+    height: 300px;
+    width: 300px;
+}

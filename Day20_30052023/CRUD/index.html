@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    CRUD
+    Create: POST
+    Read: GET
+    Update: PUT
+    Delete: Delete
+    <script>
+        let url=`https://647588dde607ba4797dbfe8d.mockapi.io/user`
+        console.log(url)
+        
+        //async & await
+        async function getUserData(){
+            let data=await fetch(url)
+            let res=await data.json()
+            console.log(res)
+            console.table(res)
+        } getUserData()
+
+        const id=5
+        console.log(`${url}/${id}`)
+        async function getUserDataByID(){
+            let data=await fetch(`${url}/${id}`)
+            let res=await data.json();
+            console.log(res)
+        }getUserDataByID()
+
+        //create
+
+        async function createData(){
+            let newUser={
+                "name":"New User",
+                "email":"newuser@gmail"
+            }
+            let data=await fetch(url,{
+                method: "POST",
+                headers: {"Content-Type":"application/json"},
+                body:JSON.stringify(newUser)
+            })
+            let res=await data.json()
+            console.log(res)
+        }createData()
+
+        //Update
+
+        async function Update(){
+            let updateUser={
+                "name":"B47 WD",
+                "email":"b47guvi@gmail.com"
+            }
+            let data=await fetch(url+"/4",{
+                method:"PUT",
+                headers:{"Content-Type":"application/json"},
+                body: JSON.stringify(updateUser)
+
+            })
+            let res= await data.json()
+            console.log(res)
+        }Update()
+
+        //Delete
+
+        async function deleteUser(){
+            let data=await fetch(url+"/10",{
+                method: "DELETE"
+            })
+        }deleteUser()
+
+    </script>
+</body>
+</html>

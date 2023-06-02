@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Stack</title>
+</head>
+<body>
+    
+    <script>
+        console.log('10');
+       function third(){
+        console.log('Third')
+       }
+       function bar(){
+        console.log("Second")
+       setTimeout( function ()
+        {console.log("Last")
+       },1000);
+    }
+    function first(){
+        console.log("First")
+    } first();
+    bar();
+    third();
+    </script>
+</body>
+</html>

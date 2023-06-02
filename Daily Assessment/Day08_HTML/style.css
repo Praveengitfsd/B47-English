@@ -1,0 +1,7 @@
+.divide{
+    display: grid;
+}
+
+tr,td,th{
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var division=document.createElement('div')
+        division.innerHTML="<h2> HI H1, welcome to DOM</h2>"
+        document.body.append(division) 
+
+        var section=document.createElement('div')
+        section.innerHTML="Welcome to DOM"
+        document.body.append(section)
+
+        //inner text
+        var text=document.createElement('div')
+        text.innerText="<h2> HI H1, welcome to DOM</h2>"
+        document.body.append(text)
+
+        var text1=document.createElement('div')
+        text.innerText="HI H1, welcome to DOM"
+        document.body.append(text1)
+    </script>
+    
+</body>
+</html>

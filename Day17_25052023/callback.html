@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function callMe(){
+            console.log("I am a callback function")
+        }
+
+        // function greet(name,callback){
+        //     setTimeout( callback () 
+        //     {console.log("inner")
+        //     },1000); 
+        //     console.log(`Welcome ${name} to Guvi`)
+            
+        // }
+        
+        greet("Praveen",callMe);
+
+        // addition of two numbers
+        function display(sum){
+            console.log("Sum of two numbers is:", sum)
+        }
+
+        function add(n1,n2,callback){
+            var add=n1+n2;
+            callback(add)
+
+        }sum(4,4,display)
+
+        //passing a parameter from one function to another function
+
+        function sayName(name){
+            console.log("Name is:", name)
+        }
+        function newFunc(name,callback){
+            console.log("I am a new Function")
+            callback(name)
+        } newFunc("Praveen",sayName)
+
+        setTimeout(newFunc,5000,"Praveen",sayName)
+
+    </script>
+</body>
+</html>

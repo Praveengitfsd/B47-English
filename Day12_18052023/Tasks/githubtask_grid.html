@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Grid</title>
+    <style>
+         .container{
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            grid-template-rows: auto auto;
+            gap: 10px;
+            background-color: gainsboro;
+            padding: 10px;
+            width: 600px;
+            height: 600px;
+            
+        }
+        .item{
+            border-radius: 5%;
+            }
+        .item1 {
+            background-color: blue;
+            grid-row: 1/5;
+        }
+        .item2 {
+            background-color: blueviolet;
+            grid-row: 2/3;
+            top: 20%;
+            }
+        .item3{
+            background-color: brown;
+            grid-column: 2/5;
+            grid-row: 1/2;
+            height: 50px;
+            padding: 0%;
+            margin: 0%;
+        }
+        .item4{
+            background-color: cadetblue;
+        }
+        .item5{
+            background-color: yellowgreen;
+            grid-column: 2/5;
+            grid-row: 3/5;
+        }
+       
+        /* .grid-container > div {
+                                background-color: rgba(255, 255, 255, 0.8);
+                                text-align: center;
+                                padding: 20px 0;
+                                font-size: 30px;
+                            } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Github</div>
+        <div class="item item2">Menu</div>
+        <div class="item item2">Menu</div>
+        <div class="item item2">Menu</div>
+        <div class="item item3">Search</div>
+        <!-- <div class="item4">Task</div> -->
+        <div class="item item5">Footer</div>
+        
+    </div>
+    
+</body>
+</html>

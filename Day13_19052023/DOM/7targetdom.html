@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target DOM</title>
+    <style>
+        .container{border: 1px solid red;}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="h1tag"> Hello </h1>
+    </div>
+
+    <div class="container">
+        <h2 id="h2tag"> Hello </h2>
+    </div>
+
+    <div class="container">
+        <h3 id="h3tag"> Hello </h3>
+    </div>
+
+    <script>
+        var container=document.getElementsByClassName('container')
+        console.log(container)
+
+        for(var i=0;i<container.length;i++){
+        console.log(container[i])}
+
+        var h2tagname=document.getElementById('h2tag')
+        console.log(h2tagname)
+        h2tagname.style.backgroundColor='blue'
+
+
+    </script>
+</body>
+</html>
