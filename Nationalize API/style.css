@@ -8,12 +8,12 @@ body{
     height: 30%;
     padding-left: 5px;
     color: white;
-   font-family:"Fugaz One";
+   
    
 }
 .result{
     display: none;
-    background-image: linear-gradient(to left,rgb(12, 66, 84),rgb(84, 10, 70));
+    background-color: cornsilk;
 }
 #btn{
     height: 30px;

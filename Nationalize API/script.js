@@ -40,7 +40,7 @@ search_btn.addEventListener("click", async ()=>{
              <div class="container">
                <div class="card">
                  <div class="card-header">
-                  <div class="card-title">TOP-${i+1}</div>
+                  <div class="card-title">Prediction-${i+1}</div>
                   
                  </div>
                  <div class="card-body">
